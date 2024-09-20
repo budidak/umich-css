@@ -8,17 +8,31 @@
   </head>
   <body>
     <header>
-      <p><a href="#main">Skip to the main content</a></p>
+      <a href="#main" class="hidden-nav">Skip to the main content</a>
       <h1>Contact</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="locations.html">Locations</a></li>
-          <li><a href="#" style="color: red;">About</a></li>
+          <li><a href="#" style="color: orangered">About</a></li>
         </ul>
       </nav>
     </header>
     <main id="main">
+      <section aria-label="contact-form" id="form-section">
+        <form action="#" method="get">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <br />
+          <label for="message">Your Message:</label><br />
+          <textarea name="message" id="message" rows="10" cols="80"></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </section>
       <section aria-label="About me" class="about-me">
         <h2>About Me</h2>
         <p>
@@ -35,24 +49,14 @@
           neque ullam laborum nihil. Dolore dolorem facilis molestiae neque
           exercitationem cumque quidem, iure nulla nostrum!
         </p>
-      </section>
-      <section aria-label="contact-form" id="form-section">
-        <form action="#" method="get">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" />
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" />
-          <br>
-          <label for="message">Your Message:</label><br>
-          <textarea name="message" id="message" rows="10" cols="80"></textarea>
-          <br>
-          <button type="submit">Send</button>
-        </form>
+        <img src="images/1.jpg" alt="" />
       </section>
     </main>
     <footer>
-      <p>This site is designed by <cite>Burak Yeşilyurt</cite> &copy; <time datetime="2024">2024</time></p>
+      <p>
+        This site is designed by <cite>Burak Yeşilyurt</cite> &copy;
+        <time datetime="2024">2024</time>
+      </p>
     </footer>
   </body>
 </html>
